@@ -3066,8 +3066,8 @@ SilvaPropertyTool.prototype._createImageBrowserItemHTML = function(
     input1.className = 'button transporter';
     input1.setAttribute('accesskey', 'r');
     input1.setAttribute('title', 'Locate item to refer to: alt-r');
-    var jsclick = "reference.getReference(function(path, id, title) {document.getElementsByName('image_path')[0].value = path;},'&dtml-get_root_url;','Responsive Image', true,'')";
-//    var jsclick = "reference.getReference(function(path, id, title) {document.getElementsByName('image_path')[0].value = path;},'&dtml-get_images_folder_url;','Silva Image', true,'')";
+//    var jsclick = "reference.getReference(function(path, id, title) {document.getElementsByName('image_path')[0].value = path;},'&dtml-get_root_url;','Silva Image', true,'')";
+    var jsclick = "reference.getReference(function(path, id, title) {document.getElementsByName('image_path')[0].value = path;},'&dtml-get_images_folder_url;','Silva Image', true,'')";
     input1.setAttribute('onclick', jsclick);
     innerdiv.appendChild(input1);
     var input2 = null;
