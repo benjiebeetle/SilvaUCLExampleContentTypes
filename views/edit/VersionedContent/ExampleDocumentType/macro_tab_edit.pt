@@ -155,7 +155,7 @@ h2 {
   </tal:if>
   
   <span tal:replace="nothing"> _________ or preview document ____ </span>
-  <tal:block condition="python:not model.get_unapproved_version() and model.meta_type == 'ThreeD Object'">
+  <tal:block condition="python:not model.get_unapproved_version() and model.meta_type == 'Example Document'">
     <tal:public tal:condition="python: model.get_viewable()">
     <metal:use use-macro="here/macro_exampledocument_info/macros/example_document_info_article">
         this will insert an info box for example documents

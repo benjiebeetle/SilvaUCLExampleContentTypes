@@ -144,6 +144,9 @@ class ExampleDocumentType(CatalogedVersionedContent):
         parseString(html, handler)
 
         version = self.get_editable()
+        version.set_catalogue_number(handler.metadata['catalogue_number'][0])
+        version.set_catalogue_url(handler.metadata['catalogue_url'][0])
+        version.set_image_path(handler.metadata['image_path'][0])
         version.set_title(handler.title)
                  
 InitializeClass(ExampleDocumentType)
@@ -159,6 +162,9 @@ class ExampleDocumentTypeVersion(CatalogedVersion):
         # XXX dummy title?
         ExampleDocumentTypeVersion.inheritedAttribute('__init__')(self, id)
         self.content = SilvaXMLAttribute('content')
+        self._catalogue_number = ''
+        self._catalogue_url = ''
+        self._image_path = ''
 
 
     # SETTERS
