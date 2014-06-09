@@ -167,6 +167,10 @@ class ExampleDocumentTypeVersion(CatalogedVersion):
         self._image_path = ''
 
 
+    def URLFinder(self):
+        return self.context.absolute_url()
+        
+
     # SETTERS
     security.declareProtected(SilvaPermissions.ChangeSilvaContent,
                               'set_catalogue_number')

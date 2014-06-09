@@ -10,12 +10,14 @@
 
 
 # This script is called (if required) by views > edit > VersionedContent > ExampleDocumentType > kupusilvatools.js.dtml line 3070
-# ATM is is commented out in the js file and replaced by a simple call to get_root_url, as below.
-# Just return the url of the silva root for now
+# I can't work out how to get from the service_views object to the actual content object via the dtml call
+# in kupusilvatools.js.dtml. I've tried content_url() and get_content(), but neither works so
+# just return the url of the silva root for now
+
 return context.get_root_url()
 
 # Below is a quick fix to work for Petrie. It needs to be made generic
-# I'll do that at some point
+# I'll do that at some point, but can't at the moment, cos I'm not clever enough
 catalog = context.service_catalog
 publications = catalog.searchResults({'meta_type':'Silva Publication','id':'3dpetriemuseum'})
 myroot = publications and publications[0].getObject() or None
