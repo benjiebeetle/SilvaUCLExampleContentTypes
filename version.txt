@@ -1,1 +1,1 @@
-Silva UCL Example Content Types 0.1
+Silva UCL Indigo Document Adaptor 0.1

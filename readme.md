@@ -1,2 +1,2 @@
-SilvaUCLExampleContentTypes
+SilvaUCLIndigoDocumentAdaptor
 ===========================

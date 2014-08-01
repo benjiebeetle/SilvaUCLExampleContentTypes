@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<metadata_set id="silva-indigo-folders" ns_uri="http://infrae.com/namespaces/metadata/silva-indigo-folders" ns_prefix="silva-indigo-folders">
+<title>Silva Indigo Folders Meta</title>
+<description></description>
+<i18n_domain>silva</i18n_domain>
+
+ <metadata_element id="photograph">
+   <index_type>FieldIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>CheckBoxField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+     <value key="alternate_name" type="str" value="" />
+     <value key="hidden" type="int" value="0" />
+     <value key="unicode" type="int" value="1" />
+     <value key="external_validator" type="str" value="" />
+     <value key="required" type="int" value="0" />
+     <value key="css_class" type="str" value="" />
+     <value key="default" type="str" value="red" />
+     <value key="title" type="str" value="header image" />
+     <value key="description" type="str" value="Is there a header image in this section of the web site?" />
+     <value key="max_length" type="str" value="" />
+     <value key="whitespace_preserve" type="int" value="0" />
+     <value key="extra" type="str" value="" />
+     <value key="orientation" type="str" value="vertical" />
+   </field_values>
+   <field_tales>
+     <value key="alternate_name"></value>
+     <value key="hidden"></value>
+     <value key="unicode"></value>
+     <value key="external_validator"></value>
+     <value key="required"></value>
+     <value key="css_class"></value>
+     <value key="default"></value>
+     <value key="title"></value>
+     <value key="description"></value>
+     <value key="max_length"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="orientation"></value>
+     <value key="extra">string: id="${here/id}"</value>
+   </field_tales>
+   <field_messages>
+   </field_messages>
+   <index_args>
+     <value key="doc_attr">proxy_value</value>
+   </index_args>
+ </metadata_element>
+
+ <metadata_element id="columns">
+   <index_type>FieldIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>RadioField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+     <value key="alternate_name" type="str" value="" />
+     <value key="hidden" type="int" value="0" />
+     <value key="unicode" type="int" value="1" />
+     <value key="max_linelength" type="str" value="" />
+     <value key="max_lines" type="str" value="1" />
+     <value key="width" type="int" value="40" />
+     <value key="external_validator" type="str" value="" />
+     <value key="height" type="int" value="1" />
+     <value key="required" type="int" value="0" />
+     <value key="css_class" type="str" value="" />
+     <value key="default" type="str" value="3_columns" />
+     <value key="title" type="str" value="columns" />
+     <value key="items" type="list" value="[('3 columns', '3_columns'), ('2 columns', '2_columns')]" />
+     <value key="description" type="str" value="Select 2 or three column layout for this section" />
+     <value key="max_length" type="str" value="" />
+     <value key="whitespace_preserve" type="int" value="0" />
+     <value key="extra" type="str" value="" />
+   </field_values>
+   <field_tales>
+     <value key="alternate_name"></value>
+     <value key="hidden"></value>
+     <value key="unicode"></value>
+     <value key="max_linelength"></value>
+     <value key="max_lines"></value>
+     <value key="width"></value>
+     <value key="external_validator"></value>
+     <value key="height"></value>
+     <value key="required"></value>
+     <value key="css_class"></value>
+     <value key="default"></value>
+     <value key="title"></value>
+     <value key="description"></value>
+     <value key="max_length"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="extra">string: id="${here/id}"</value>
+   </field_tales>
+   <field_messages>
+   </field_messages>
+   <index_args>
+     <value key="doc_attr">proxy_value</value>
+   </index_args>
+ </metadata_element>
+
+</metadata_set>

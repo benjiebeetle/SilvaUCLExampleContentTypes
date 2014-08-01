@@ -6,29 +6,14 @@
 
 
   <silva:extension
-    name="SilvaUCLExampleContentTypes" 
-    title="Silva UCL Example Content Types"
+    name="SilvaUCLIndigoDocumentAdaptor" 
+    title="Silva UCL Indigo Document Adaptor"
     />
 
 <!--  <silva:extension
-    name="SilvaUCLExampleContentTypes" 
-    title="Silva UCL Example Content Types"
+    name="SilvaUCLIndigoDocumentAdaptor" 
+    title="Silva UCL Indigo Document Adaptor"
     depends="SilvaDocument"
     />-->
-  
-
-  <silva:content
-    extension_name="SilvaUCLExampleContentTypes"
-    content=".content.ExampleFolderType.ExampleFolderType"
-    icon="www/pictures-stack.png"
-    />
-
-  <silva:versionedcontent
-    extension_name="SilvaUCLExampleContentTypes"
-    content=".content.ExampleDocumentType.ExampleDocumentType"
-    version=".content.ExampleDocumentType.ExampleDocumentTypeVersion"
-    icon="www/exclamation-diamond-frame.png"
-    /> 
-
 
 </configure>
